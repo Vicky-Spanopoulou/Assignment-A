@@ -14,7 +14,7 @@ p {
 /* --------------- Banner section ------------------- */
 
 .banner {
-    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/pics/banner.jfif');
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pics/banner.jfif');
     background-size: cover;
     background-position: center;
     padding: 150px 0;
