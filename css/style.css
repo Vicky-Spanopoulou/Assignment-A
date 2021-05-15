@@ -336,7 +336,7 @@ hr {
   .pnl {
     padding: 0 18px;
     display: none;
-    background-color: white;
+    background-color: #fcf4ed; 
     overflow: hidden;
   }
 
