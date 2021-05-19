@@ -123,8 +123,8 @@
             </ol>
         </div>
         <hr>
+        <!-- Courses -->
         <div class="about">
-            <!-- Courses -->
             <a id="courses"></a>
             <h2>Courses.</h2>
             <p>
@@ -138,18 +138,36 @@
                 earum facere consequatur doloribus eveniet laudantium nemo facilis?
             </p>
         </div>
+        <!-- Accodrion course menu -->
         <button id="new-course" class="addNew"><strong>Add new</strong></button>
         <button id="btn-course" class="accordion"><strong>Courses</strong></button>
-        <div id="pnl-course" class="pnl">
-            <ol class="panel">
-                <li>CB13, Java, part time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, C#, part time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, Python, part time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, JavaScript, part time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, Java, full time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, C#, full time, 15/02/2021, 15/09/2021</li>
-                <li>CB13, JavaScript, full time, 15/02/2021, 15/09/2021</li>
-            </ol>
+        <!-- Course tabs -->
+        <div id="pnl-course" class="pnl panel">
+            <div class="panel">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCourse(event, 'fullTime')">CB13: Full time</button>
+                    <button class="tablinks" onclick="openCourse(event, 'partTime')">CB13: Part time</button>
+                </div>
+                  
+                <div id="fullTime" class="tabcontent">
+                    <h3>CB13 Full time</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                  
+                <div id="partTime" class="tabcontent">
+                    <h3>CB13 Part time</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <hr>
         <div class="about">

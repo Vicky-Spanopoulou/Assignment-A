@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Assignment</title>
+    <title>Edit: Course</title>
 </head>
 
 <body>
@@ -17,24 +17,27 @@
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <!-- Form -->
-    <div class="form-section" id="assignment-form">
-        <div class="form" id="assignment">
+    <div class="form-section">
+        <div class="form">
             <form action="index2.html" method="GET">
                 <div>
-                    <h1 id="new-assignment">New Assignment:</h1>
-                    <p>Please fill in this form to create a new assignment.</p>
+                    <h1>Edit Course:</h1>
+                    <p>Please fill in this form to edit an existing course.</p>
                     <hr>
                     <p class="info"><b>Title:</b></p>
-                    <p><input type="text" name="assignment-title" placeholder="Enter Assignment's Title" class="box" required></p>
+                    <p><input type="text" name="course-title" placeholder="Enter Course's Title" class="box" required></p>
 
-                    <p class="info"><b>Description:</b></p>
-                    <p><input type="text" name="assignment-desc" placeholder="Enter Assignment's Description" class="box" required></p>
+                    <p class="info"><b>Type:</b></p>
+                    <p><input type="text" name="course-type" placeholder="Enter Course's Type" class="box" required></p>
+
+                    <p class="info"><b>Stream:</b></p>
+                    <p><input type="email"name="course-stream" placeholder="Enter Course's Stream" class="box" required></p>
 
                     <p class="info"><b>Start Date:</b></p>
                     <p><input type="date" name="start-date" min="2005-01-01" class="box"></p>
 
-                    <p class="info"><b>Submision Date:</b></p>
-                    <p><input type="date" name="subm-date" min="2021-01-01" class="box"></p>
+                    <p class="info"><b>End Date:</b></p>
+                    <p><input type="date" name="end-date" min="2005-01-01" class="box"></p>
                     <hr>
                     <p class="form-buttons">
                         <input id="submit-btn" type="submit" value="Save" class="button">
@@ -44,10 +47,10 @@
             </form>
         </div>
         <div class="imgs">
-            <img id="assignment-img" src="pics/about.jpg" alt="Assignment">
+            <img id="course-img" src="pics/courses.jpg" alt="Courses">
         </div>
-        <div class="form-text" id="assignment-p">
-            <p><span id="first-word">Assignments</span> lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt
+        <div class="form-text">
+            <p><span id="first-word">Courses</span> lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt
                 expedita adipisci! Dicta vero quidem voluptate, quasi nobis vitae aut at vel, aliquam excepturi alias
                 perspiciatis quos sed assumenda ad? Voluptatibus quia corporis aliquid numquam, quis placeat magni illum
                 corrupti vel quam praesentium eveniet enim nisi dicta similique. Facere, magnam!
