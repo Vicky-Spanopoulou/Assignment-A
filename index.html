@@ -145,26 +145,86 @@
         <button id="btn-course" class="accordion"><strong>Courses</strong></button>
 
         <!-- Modal box: assignments -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Course's assignments:</h3>
-                <form action="#">
-                    <input type="checkbox" id="a1" value="first">
-                    <label for="a1">first assignment</label>
+        <div>
+            <div id="myModal1" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="modal-course1">
+                    <span class="close">&times;</span>
+                    <h3>Course's assignments:</h3>
+                    <form action="#">
+                        <input type="checkbox" id="a1" value="first">
+                        <label for="a1">first assignment</label>
+                        <br>
+                        <input type="checkbox" id="a2" value="second">
+                        <label for="a2">second assignment</label>
+                        <br>
+                        <input type="checkbox" id="a3" value="third">
+                        <label for="a3">third assignment</label>
+                        <br><br>
+                        <input type="button" value="save">
+                    </form>
                     <br>
-                    <input type="checkbox" id="a2" value="second">
-                    <label for="a2">second assignment</label>
+                </div>
+            </div>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="modal-course1">
+                    <span class="close">&times;</span>
+                    <h3>Course's assignments:</h3>
+                    <form action="#">
+                        <input type="checkbox" id="a1" value="first">
+                        <label for="a1">first assignment</label>
+                        <br>
+                        <input type="checkbox" id="a2" value="second">
+                        <label for="a2">second assignment</label>
+                        <br>
+                        <input type="checkbox" id="a3" value="third">
+                        <label for="a3">third assignment</label>
+                        <br><br>
+                        <input type="button" value="save">
+                    </form>
                     <br>
-                    <input type="checkbox" id="a3" value="third">
-                    <label for="a3">third assignment</label>
-                    <br><br>
-                    <input type="button" value="save">
-                </form>
-                <br>
-
+                </div>
+            </div>
+            <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="modal-course1">
+                    <span class="close">&times;</span>
+                    <h3>Course's assignments:</h3>
+                    <form action="#">
+                        <input type="checkbox" id="a1" value="first">
+                        <label for="a1">first assignment</label>
+                        <br>
+                        <input type="checkbox" id="a2" value="second">
+                        <label for="a2">second assignment</label>
+                        <br>
+                        <input type="checkbox" id="a3" value="third">
+                        <label for="a3">third assignment</label>
+                        <br><br>
+                        <input type="button" value="save">
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <div id="myModal4" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="modal-course1">
+                    <span class="close">&times;</span>
+                    <h3>Course's assignments:</h3>
+                    <form action="#">
+                        <input type="checkbox" id="a1" value="first">
+                        <label for="a1">first assignment</label>
+                        <br>
+                        <input type="checkbox" id="a2" value="second">
+                        <label for="a2">second assignment</label>
+                        <br>
+                        <input type="checkbox" id="a3" value="third">
+                        <label for="a3">third assignment</label>
+                        <br><br>
+                        <input type="button" value="save">
+                    </form>
+                    <br>
+                </div>
             </div>
         </div>
 
@@ -193,7 +253,8 @@
                             </td>
                             <td><input type="button" value="assignments" title="Edit course's assignments"
                                     class="edit-cs-assignments"
-                                    id="modal-c1"></td>
+                                    id="modal-c1"
+                                    onclick="showDiv('#myModal1')"></td>
                         </tr>
                         <tr>
                             <td>C#</td>
@@ -203,7 +264,8 @@
                             </td>
                             <td><input type="button" value="assignments" title="Edit course's assignments"
                                     class="edit-cs-assignments"
-                                    id="modal-c2"></td>
+                                    id="modal-c2"
+                                    onclick="showDiv('#myModal2')"></td>
                         </tr>
                         <tr>
                             <td>Python</td>

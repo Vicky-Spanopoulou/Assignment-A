@@ -37,45 +37,39 @@ $(document).ready(function () {
         window.open('assignment.html', '_blank');
     });
 
-    //scroll to top button
+    // Scroll to top button
     $("#top-button").click(function (event) {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
 
+
     // Course tab menu - hide elements which are shown on document load
     $("#partTime").hide();
 
-    //Courses menu: open edit form when you click the edit button
+
+    // Courses menu: open edit form when you click the edit button
     $('.edit-course').click(function (event) {
         window.open('edit-course.html', '_blank');
     });
 
 
 
+    // Modal windows
+    for (let i = 1; i < 5; i++) {
+        $('#modal-c' + i).click(function (event) {
+            console.log("inner " + i);
+            $('#myModal' + i).show();
+
+        });
+    };
+
+    $('.close').click(function (event) {
+        $('.modal').hide();
+
+    });
+
 });
-
-
-// click the add new button to go to the form
-
-// $(document).ready(function(){
-//     $("#new-student").click(function(event){
-//         window.open('student.html', '_blank');
-//     });
-
-//     $("#new-trainer").click(function(event){
-//         window.open('trainer.html', '_blank');
-//     });
-
-//     $("#new-course").click(function(event){
-//         window.open('course.html', '_blank');
-//     });
-
-//     $("#new-assignment").click(function(event){
-//         window.open('assignment.html', '_blank');
-//     });
-
-// });
 
 
 
@@ -95,20 +89,6 @@ function scrollFunction() {
 };
 
 
-
-// $(document).ready(function(){
-//     $("#top-button").click(function(event){
-//         document.body.scrollTop = 0;
-//         document.documentElement.scrollTop = 0;
-//     });
-// });
-
-
-// Course tab menu
-
-// $(document).ready(function(){
-//     $("#partTime").hide();
-// });
 
 
 // -----------------Course tab menu---------------------
@@ -139,20 +119,6 @@ function openCourse(evt, courseType) {
 // ------------------Modal window---------------------
 
 // let modal = document.getElementById("myModal");
-// let btn = document.getElementById("modal-c1");
-// let span = document.getElementsByClassName("close")[0];
-
-
-// When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//     modal.style.display = "block";
-// }
-
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//     modal.style.display = "none";
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function (event) {
@@ -160,26 +126,3 @@ function openCourse(evt, courseType) {
 //         modal.style.display = "none";
 //     }
 // }
-
-$(document).ready(function(){
-    // for(var i = 1; i < 5; i++){
-
-    //     $('#modal-c'+i).click(function (event) {
-    //         modal.style.display = "block";
-    //     });
-    // }
-
-    $('#modal-c1').click(function (event) {
-        // modal.style.display = "block";
-        $('#myModal').show();
-    });
-
-    $('#modal-c2').click(function (event) {
-        $('#myModal').show();
-    });
-
-    $('.close').click(function(event){
-        // modal.style.display = "none";
-        $('#myModal').hide();
-    })
-})
