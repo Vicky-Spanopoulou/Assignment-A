@@ -4,6 +4,7 @@ body{
     font-family: Verdana;
     margin: 0;
     background-color: #fcf4ed;
+    
 }
 
 p {
@@ -14,7 +15,7 @@ p {
 /* --------------- Banner section ------------------- */
 
 .banner {
-    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pics/banner.jpg');
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/pics/banner.jpg');
     background-size: cover;
     background-position: center;
     padding: 150px 0;
@@ -36,8 +37,10 @@ p {
 
 .container {
     width: 100%;
-    margin: auto;
     margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 /* -------------------- Cards area --------------------- */
@@ -177,6 +180,30 @@ color: rgb(0, 0, 0);
 background: whitesmoke;
 color: rgb(0, 0, 0);
 }
+
+
+  /* -------------- Scroll to top button --------------- */
+
+  #top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none; 
+    outline: none;
+    background-color: rgb(231, 61, 61); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
+  }
+  
+  #top-button:hover {
+    background-color: #555;
+  }
+
 
 
 /* -------------- Images --------------- */
@@ -331,49 +358,50 @@ hr {
     
   }
   
-  .active, .accordion:hover {
-    background-color: rgb(219, 167, 137); 
-  }
+.active, .accordion:hover {
+background-color: rgb(219, 167, 137); 
+}
 
-  .active, .addNew:hover{
-    background-color: rgb(219, 167, 137); 
-  }
-  
-  .pnl {
-    padding: 0 18px;
-    display: none;
-    background-color: #fcf4ed; 
-    overflow: hidden;
-  }
+.active, .addNew:hover{
+background-color: rgb(219, 167, 137); 
+}
 
-
-  .panel{
-      padding-left: 120px;
-  }
+.pnl {
+padding: 0 18px;
+display: none;
+background-color: #fcf4ed; 
+overflow: hidden;
+}
 
 
+.panel{
+    padding-left: 50px;
+    width: 100%;
+}
 
-  /* -------------- Scroll to top button --------------- */
 
-  #top-button {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none; 
-    outline: none;
-    background-color: rgb(231, 61, 61); 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px;
-    font-size: 18px; 
-  }
-  
-  #top-button:hover {
-    background-color: #555;
-  }
+  /* -------------- Tables --------------- */
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    }
+
+th{
+    font-size: medium;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: rgb(243, 211, 194);}
+
+
+
  
   /* -------------- Course tabs --------------- */
 
@@ -386,6 +414,7 @@ hr {
     border-right: 1px solid #ccc;
     width: 30%;
     height: 300px;
+    
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -400,6 +429,11 @@ hr {
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
+  }
+
+  .tablinks{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
   }
   
   /* Change background color of buttons on hover */
@@ -417,11 +451,51 @@ hr {
     float: left;
     padding: 0px 12px;
     /* border: 1px solid #ccc; */
-    width: 50%;
+    width: 70%;
     border-left: none;
     height: 300px;
+    overflow: auto;
   }
 
-  .tabcontent ul{
-    list-style: none;
-  }
+
+
+/* -------------- Modal box --------------- */
+
+.modal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}

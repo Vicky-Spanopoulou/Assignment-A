@@ -57,8 +57,8 @@
     </div>
 
     <div class="container">
+        <!-- About Us -->
         <div class="about">
-            <!-- About Us -->
             <a id="about-us"></a>
             <h2>About Us</h2>
             <p>
@@ -73,8 +73,8 @@
             </p>
         </div>
         <hr>
+        <!-- Trainers -->
         <div class="about">
-            <!-- Trainers -->
             <a id="trainers"></a>
             <h2>Our trainers.</h2>
             <p>
@@ -88,6 +88,7 @@
                 earum facere consequatur doloribus eveniet laudantium nemo facilis?
             </p>
         </div>
+        <!-- Buttons - Accordion menu -->
         <button id="new-trainer" class="addNew"><strong>Add new</strong></button>
         <button id="btn-trainer" class="accordion"><strong>Trainers</strong></button>
         <div id="pnl-trainer" class="pnl">
@@ -98,8 +99,8 @@
             </ol>
         </div>
         <hr>
+        <!-- Students -->
         <div class="about">
-            <!-- Students -->
             <a id="students"></a>
             <h2>Our students.</h2>
             <p>
@@ -113,6 +114,7 @@
                 earum facere consequatur doloribus eveniet laudantium nemo facilis?
             </p>
         </div>
+        <!-- Buttons - Accordion menu -->
         <button id="new-student" class="addNew"><strong>Add new</strong></button>
         <button id="btn-student" class="accordion"><strong>Students</strong></button>
         <div id="pnl-student" class="pnl">
@@ -138,9 +140,34 @@
                 earum facere consequatur doloribus eveniet laudantium nemo facilis?
             </p>
         </div>
-        <!-- Accodrion course menu -->
+        <!-- Buttons - Accordion menu -->
         <button id="new-course" class="addNew"><strong>Add new</strong></button>
         <button id="btn-course" class="accordion"><strong>Courses</strong></button>
+
+        <!-- Modal box: assignments -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Course's assignments:</h3>
+                <form action="#">
+                    <input type="checkbox" id="a1" value="first">
+                    <label for="a1">first assignment</label>
+                    <br>
+                    <input type="checkbox" id="a2" value="second">
+                    <label for="a2">second assignment</label>
+                    <br>
+                    <input type="checkbox" id="a3" value="third">
+                    <label for="a3">third assignment</label>
+                    <br><br>
+                    <input type="button" value="save">
+                </form>
+                <br>
+
+            </div>
+        </div>
+
         <!-- Course tabs -->
         <div id="pnl-course" class="pnl panel">
             <div class="panel">
@@ -148,17 +175,60 @@
                     <button class="tablinks" onclick="openCourse(event, 'fullTime')">CB13: Full time</button>
                     <button class="tablinks" onclick="openCourse(event, 'partTime')">CB13: Part time</button>
                 </div>
-                  
+
                 <div id="fullTime" class="tabcontent">
-                    <h3>CB13 Full time</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <table class="tables">
+                        <tr>
+                            <th>Stream</th>
+                            <th>Start date</th>
+                            <th>End date</th>
+                            <th>Edit</th>
+                            <th>Assignments</th>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>2021-02-15</td>
+                            <td>2021-09-15</td>
+                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                            </td>
+                            <td><input type="button" value="assignments" title="Edit course's assignments"
+                                    class="edit-cs-assignments"
+                                    id="modal-c1"></td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>2021-02-15</td>
+                            <td>2021-09-15</td>
+                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                            </td>
+                            <td><input type="button" value="assignments" title="Edit course's assignments"
+                                    class="edit-cs-assignments"
+                                    id="modal-c2"></td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>2021-02-15</td>
+                            <td>2021-09-15</td>
+                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                            </td>
+                            <td><input type="button" value="assignments" title="Edit course's assignments"
+                                    class="edit-cs-assignments"
+                                    id="modal-c3"></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>2021-02-15</td>
+                            <td>2021-09-15</td>
+                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                            </td>
+                            <td><input type="button" value="assignments" title="Edit course's assignments"
+                                    class="edit-cs-assignments"
+                                    id="modal-c4"></td>
+
+                        </tr>
+                    </table>
                 </div>
-                  
+
                 <div id="partTime" class="tabcontent">
                     <h3>CB13 Part time</h3>
                     <ul>
@@ -170,8 +240,8 @@
             </div>
         </div>
         <hr>
+        <!-- Assignments -->
         <div class="about">
-            <!-- Assignments -->
             <a id="assignments"></a>
             <h2>Assignments.</h2>
             <p>
@@ -185,6 +255,7 @@
                 earum facere consequatur doloribus eveniet laudantium nemo facilis?
             </p>
         </div>
+        <!-- Buttons - Accordion menu -->
         <button id="new-assignment" class="addNew"><strong>Add new</strong></button>
         <button id="btn-assignment" class="accordion"><strong>Assignments</strong></button>
         <div id="pnl-assignment" class="pnl">
@@ -218,8 +289,7 @@
     </div>
 
     <!-- insert jquery api -->
-    <script 
-        src="https://code.jquery.com/jquery-3.4.1.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
     <!-- javascript-jquery -->
