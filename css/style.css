@@ -299,7 +299,7 @@ input[type=text], input[type=email], input[type=date], input[type=tel]{
         width: auto;
 }
 
-#new-assignment{
+#new-asgmt{
     padding-left: 90px !important;
     padding-right: 90px !important;
 }
@@ -343,13 +343,13 @@ hr {
 
 /* -------------- Accordion menus --------------- */
 
-.accordion, .addNew {
+.accordion, .addNew{
     background-color: #fcf4ed;
     color: #444;
      
     cursor: pointer;
     padding: 18px;
-    padding-left: 100px;
+    padding-left: 100px !important;
     width: 100%;
     border: none;
     text-align: left;
@@ -368,10 +368,10 @@ background-color: rgb(219, 167, 137);
 }
 
 .pnl {
-padding: 0 18px;
-display: none;
-background-color: #fcf4ed; 
-overflow: hidden;
+    padding: 0 18px;
+    display: none;
+    background-color: #fcf4ed; 
+    overflow: hidden;
 }
 
 
@@ -379,6 +379,16 @@ overflow: hidden;
     padding-left: 50px;
     width: 100%;
 }
+
+#pnl-assignment, #pnl-student, #pnl-trainer{
+    margin-left: 200px;
+    overflow: auto;
+}
+
+#pnl-assignment{
+    padding-bottom: 50px;
+}
+
 
 
   /* -------------- Tables --------------- */
@@ -400,6 +410,10 @@ th, td {
 }
 
 tr:nth-child(even) {background-color: rgb(243, 211, 194);}
+
+.tables{
+    overflow: auto;
+}
 
 
 

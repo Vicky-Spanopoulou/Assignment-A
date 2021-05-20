@@ -53,14 +53,26 @@ $(document).ready(function () {
         window.open('edit-course.html', '_blank');
     });
 
+    // Assignments menu: open edit form when you click the edit button
+    $('.edit-assignment').click(function (event) {
+        window.open('edit-assignment.html', '_blank');
+    });
+
+    // Students menu: open edit form when you click the edit button
+    $('.edit-student').click(function (event) {
+        window.open('edit-student.html', '_blank');
+    });
 
 
     // Modal windows
     for (let i = 1; i < 5; i++) {
-        $('#modal-c' + i).click(function (event) {
-            console.log("inner " + i);
+        $('#modal-f' + i).click(function (event) {
+            // console.log("inner " + i);
             $('#myModal' + i).show();
+        });
 
+        $('#modal-p' + i).click(function(event){
+            $('#myModal' + i).show();
         });
     };
 
@@ -69,7 +81,14 @@ $(document).ready(function () {
 
     });
 
-});
+
+    // Save button: when clicked an alert pops up
+    // $('#submit-assignment').click(function(event){
+    //    alert("Your changes have been saved successfuly!"); 
+    // });
+
+
+});//end of Jquery
 
 
 

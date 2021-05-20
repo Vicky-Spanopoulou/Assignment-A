@@ -117,215 +117,504 @@
         <!-- Buttons - Accordion menu -->
         <button id="new-student" class="addNew"><strong>Add new</strong></button>
         <button id="btn-student" class="accordion"><strong>Students</strong></button>
+
+        <!-- Table: assignments -->
         <div id="pnl-student" class="pnl">
-            <ol class="panel">
-                <li>Vicky</li>
-                <li>Kostas</li>
-                <li>Mike</li>
-            </ol>
-        </div>
-        <hr>
-        <!-- Courses -->
-        <div class="about">
-            <a id="courses"></a>
-            <h2>Courses.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptatum laborum error dolore
-                fuga facere expedita magni porro facilis repellat? Eveniet, debitis animi officia nobis quos quisquam
-                aspernatur. Inventore perspiciatis deserunt incidunt repudiandae quasi est quidem aliquam corporis
-                numquam asperiores nam nesciunt ducimus facere, fuga, nihil odio cupiditate vero! Labore dolores saepe
-                mollitia commodi molestiae ipsum iusto sunt assumenda! Vel aut, suscipit cum nihil tempore provident,
-                amet laborum ducimus repellat quia quae consectetur quaerat accusantium totam non praesentium. Aut
-                accusantium dolore, ad cumque est repellat iusto impedit, delectus voluptas mollitia repellendus nisi,
-                earum facere consequatur doloribus eveniet laudantium nemo facilis?
-            </p>
-        </div>
-        <!-- Buttons - Accordion menu -->
-        <button id="new-course" class="addNew"><strong>Add new</strong></button>
-        <button id="btn-course" class="accordion"><strong>Courses</strong></button>
+            <table class="tables">
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Tuition fees</th>
+                    <th>Date of birth</th>
+                    <th>Course</th>
+                    <th>Assignments</th>
+                    <th>Edit</th>
+                </tr>
+                <!-- 1st row -->
+                <tr>
+                    <td>Othilie</td>
+                    <td>Blenkensop</td>
+                    <td>2500.00</td>
+                    <td>1991-06-25</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 2nd row -->
+                <tr>
+                    <td>Vivien</td>
+                    <td>Tupman</td>
+                    <td>2500.00</td>
+                    <td>1984-08-29</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 3rd row -->
+                <tr>
+                    <td>Allina</td>
+                    <td>Dobbings</td>
+                    <td>2500.00</td>
+                    <td>1980-10-28</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 4th row -->
+                <tr>
+                    <td>Kalvin</td>
+                    <td>Bernade</td>
+                    <td>2250.00</td>
+                    <td>1987-09-30</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 5th row -->
+                <tr>
+                    <td>Mirabel</td>
+                    <td>Entwistle</td>
+                    <td>2500.00</td>
+                    <td>1992-04-15</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 6th row -->
+                <tr>
+                    <td>Robert</td>
+                    <td>Alcoran</td>
+                    <td>2200.00</td>
+                    <td>1996-11-08</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
+                <!-- 7th row -->
+                <tr>
+                    <td>Grace</td>
+                    <td>Gowthorpe</td>
+                    <td>2250.00</td>
+                    <td>1994-01-08</td>
+                    <td>
+                        <!-- Select menu for student's course -->
+                        <select name="courses" id="s-courses">
+                            <optgroup label="Full time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                            <optgroup label="Part time">
+                                <option value="java">Java</option>
+                                <option value="c#">C#</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="assignments" title="Edit student's assignments" class="">
+                    </td>
+                    <td>
+                        <input type="button" value="edit" title="Edit student's details" class="edit-student">
+                    </td>
+                </tr>
 
-        <!-- Modal box: assignments -->
-        <div>
-            <div id="myModal1" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content" id="modal-course1">
-                    <span class="close">&times;</span>
-                    <h3>Course's assignments:</h3>
-                    <form action="#">
-                        <input type="checkbox" id="a1" value="first">
-                        <label for="a1">first assignment</label>
-                        <br>
-                        <input type="checkbox" id="a2" value="second">
-                        <label for="a2">second assignment</label>
-                        <br>
-                        <input type="checkbox" id="a3" value="third">
-                        <label for="a3">third assignment</label>
-                        <br><br>
-                        <input type="button" value="save">
-                    </form>
-                    <br>
-                </div>
-            </div>
-            <div id="myModal2" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content" id="modal-course1">
-                    <span class="close">&times;</span>
-                    <h3>Course's assignments:</h3>
-                    <form action="#">
-                        <input type="checkbox" id="a1" value="first">
-                        <label for="a1">first assignment</label>
-                        <br>
-                        <input type="checkbox" id="a2" value="second">
-                        <label for="a2">second assignment</label>
-                        <br>
-                        <input type="checkbox" id="a3" value="third">
-                        <label for="a3">third assignment</label>
-                        <br><br>
-                        <input type="button" value="save">
-                    </form>
-                    <br>
-                </div>
-            </div>
-            <div id="myModal3" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content" id="modal-course1">
-                    <span class="close">&times;</span>
-                    <h3>Course's assignments:</h3>
-                    <form action="#">
-                        <input type="checkbox" id="a1" value="first">
-                        <label for="a1">first assignment</label>
-                        <br>
-                        <input type="checkbox" id="a2" value="second">
-                        <label for="a2">second assignment</label>
-                        <br>
-                        <input type="checkbox" id="a3" value="third">
-                        <label for="a3">third assignment</label>
-                        <br><br>
-                        <input type="button" value="save">
-                    </form>
-                    <br>
-                </div>
-            </div>
-            <div id="myModal4" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content" id="modal-course1">
-                    <span class="close">&times;</span>
-                    <h3>Course's assignments:</h3>
-                    <form action="#">
-                        <input type="checkbox" id="a1" value="first">
-                        <label for="a1">first assignment</label>
-                        <br>
-                        <input type="checkbox" id="a2" value="second">
-                        <label for="a2">second assignment</label>
-                        <br>
-                        <input type="checkbox" id="a3" value="third">
-                        <label for="a3">third assignment</label>
-                        <br><br>
-                        <input type="button" value="save">
-                    </form>
-                    <br>
-                </div>
-            </div>
+                
+            </table>
         </div>
+    </div>
+    <hr>
+    <!-- Courses -->
+    <div class="about">
+        <a id="courses"></a>
+        <h2>Courses.</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptatum laborum error dolore
+            fuga facere expedita magni porro facilis repellat? Eveniet, debitis animi officia nobis quos quisquam
+            aspernatur. Inventore perspiciatis deserunt incidunt repudiandae quasi est quidem aliquam corporis
+            numquam asperiores nam nesciunt ducimus facere, fuga, nihil odio cupiditate vero! Labore dolores saepe
+            mollitia commodi molestiae ipsum iusto sunt assumenda! Vel aut, suscipit cum nihil tempore provident,
+            amet laborum ducimus repellat quia quae consectetur quaerat accusantium totam non praesentium. Aut
+            accusantium dolore, ad cumque est repellat iusto impedit, delectus voluptas mollitia repellendus nisi,
+            earum facere consequatur doloribus eveniet laudantium nemo facilis?
+        </p>
+    </div>
+    <!-- Buttons - Accordion menu -->
+    <button id="new-course" class="addNew"><strong>Add new</strong></button>
+    <button id="btn-course" class="accordion"><strong>Courses</strong></button>
 
-        <!-- Course tabs -->
-        <div id="pnl-course" class="pnl panel">
-            <div class="panel">
-                <div class="tab">
-                    <button class="tablinks" onclick="openCourse(event, 'fullTime')">CB13: Full time</button>
-                    <button class="tablinks" onclick="openCourse(event, 'partTime')">CB13: Part time</button>
-                </div>
-
-                <div id="fullTime" class="tabcontent">
-                    <table class="tables">
-                        <tr>
-                            <th>Stream</th>
-                            <th>Start date</th>
-                            <th>End date</th>
-                            <th>Edit</th>
-                            <th>Assignments</th>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>2021-02-15</td>
-                            <td>2021-09-15</td>
-                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
-                            </td>
-                            <td><input type="button" value="assignments" title="Edit course's assignments"
-                                    class="edit-cs-assignments"
-                                    id="modal-c1"
-                                    onclick="showDiv('#myModal1')"></td>
-                        </tr>
-                        <tr>
-                            <td>C#</td>
-                            <td>2021-02-15</td>
-                            <td>2021-09-15</td>
-                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
-                            </td>
-                            <td><input type="button" value="assignments" title="Edit course's assignments"
-                                    class="edit-cs-assignments"
-                                    id="modal-c2"
-                                    onclick="showDiv('#myModal2')"></td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>2021-02-15</td>
-                            <td>2021-09-15</td>
-                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
-                            </td>
-                            <td><input type="button" value="assignments" title="Edit course's assignments"
-                                    class="edit-cs-assignments"
-                                    id="modal-c3"></td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>2021-02-15</td>
-                            <td>2021-09-15</td>
-                            <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
-                            </td>
-                            <td><input type="button" value="assignments" title="Edit course's assignments"
-                                    class="edit-cs-assignments"
-                                    id="modal-c4"></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="partTime" class="tabcontent">
-                    <h3>CB13 Part time</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
+    <!-- Modal box: assignments -->
+    <div>
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-course1">
+                <span class="close">&times;</span>
+                <h3>Course's assignments:</h3>
+                <form action="#">
+                    <input type="checkbox" id="a1" value="first">
+                    <label for="a1">First project - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a2" value="second">
+                    <label for="a2">Second project - Make a web App</label>
+                    <br>
+                    <input type="checkbox" id="a3" value="third">
+                    <label for="a3">Databases - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a4" value="fourth">
+                    <label for="a4">Group project - Make a web App</label>
+                    <br><br>
+                </form>
+                <br>
             </div>
         </div>
-        <hr>
-        <!-- Assignments -->
-        <div class="about">
-            <a id="assignments"></a>
-            <h2>Assignments.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptatum laborum error dolore
-                fuga facere expedita magni porro facilis repellat? Eveniet, debitis animi officia nobis quos quisquam
-                aspernatur. Inventore perspiciatis deserunt incidunt repudiandae quasi est quidem aliquam corporis
-                numquam asperiores nam nesciunt ducimus facere, fuga, nihil odio cupiditate vero! Labore dolores saepe
-                mollitia commodi molestiae ipsum iusto sunt assumenda! Vel aut, suscipit cum nihil tempore provident,
-                amet laborum ducimus repellat quia quae consectetur quaerat accusantium totam non praesentium. Aut
-                accusantium dolore, ad cumque est repellat iusto impedit, delectus voluptas mollitia repellendus nisi,
-                earum facere consequatur doloribus eveniet laudantium nemo facilis?
-            </p>
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-course1">
+                <span class="close">&times;</span>
+                <h3>Course's assignments:</h3>
+                <form action="#">
+                    <input type="checkbox" id="a1" value="first">
+                    <label for="a1">First project - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a2" value="second">
+                    <label for="a2">Second project - Make a web App</label>
+                    <br>
+                    <input type="checkbox" id="a3" value="third">
+                    <label for="a3">Databases - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a4" value="fourth">
+                    <label for="a4">Group project - Make a web App</label>
+                    <br><br>
+                </form>
+                <br>
+            </div>
         </div>
-        <!-- Buttons - Accordion menu -->
-        <button id="new-assignment" class="addNew"><strong>Add new</strong></button>
-        <button id="btn-assignment" class="accordion"><strong>Assignments</strong></button>
-        <div id="pnl-assignment" class="pnl">
-            <ol class="panel">
-                <li>First Project: Individual projetct - 02/03/2021 - 31/03/2021</li>
-                <li>Second Project: Individual projetct - 02/04/2021 - 20/04/2021</li>
-                <li>Third Project: Group projetct - 01/08/2021 - 31/08/2021</li>
-            </ol>
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-course1">
+                <span class="close">&times;</span>
+                <h3>Course's assignments:</h3>
+                <form action="#">
+                    <input type="checkbox" id="a1" value="first">
+                    <label for="a1">First project - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a2" value="second">
+                    <label for="a2">Second project - Make a web App</label>
+                    <br>
+                    <input type="checkbox" id="a3" value="third">
+                    <label for="a3">Databases - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a4" value="fourth">
+                    <label for="a4">Group project - Make a web App</label>
+                    <br><br>
+                </form>
+                <br>
+            </div>
         </div>
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-course1">
+                <span class="close">&times;</span>
+                <h3>Course's assignments:</h3>
+                <form action="#">
+                    <input type="checkbox" id="a1" value="first">
+                    <label for="a1">First project - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a2" value="second">
+                    <label for="a2">Second project - Make a web App</label>
+                    <br>
+                    <input type="checkbox" id="a3" value="third">
+                    <label for="a3">Databases - Individual Project</label>
+                    <br>
+                    <input type="checkbox" id="a4" value="fourth">
+                    <label for="a4">Group project - Make a web App</label>
+                    <br><br>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course tabs -->
+    <div id="pnl-course" class="pnl panel">
+        <div class="panel">
+            <div class="tab">
+                <button class="tablinks" onclick="openCourse(event, 'fullTime')">CB13: Full time</button>
+                <button class="tablinks" onclick="openCourse(event, 'partTime')">CB13: Part time</button>
+            </div>
+            <!-- Full time -->
+            <div id="fullTime" class="tabcontent">
+                <table class="tables">
+                    <tr>
+                        <th>Stream</th>
+                        <th>Start date</th>
+                        <th>End date</th>
+                        <th>Edit</th>
+                        <th>Assignments</th>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-f1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-f2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-f3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-f4">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Part time -->
+            <div id="partTime" class="tabcontent">
+                <table class="tables">
+                    <tr>
+                        <th>Stream</th>
+                        <th>Start date</th>
+                        <th>End date</th>
+                        <th>Edit</th>
+                        <th>Assignments</th>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-p1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-p2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>2021-02-15</td>
+                        <td>2021-09-15</td>
+                        <td><input type="button" value="edit" title="Edit course's details" class="edit-course">
+                        </td>
+                        <td>
+                            <input type="button" value="assignments" title="Edit course's assignments"
+                                class="edit-cs-assignments" id="modal-p3">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Assignments -->
+    <div class="about">
+        <a id="assignments"></a>
+        <h2>Assignments.</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptatum laborum error dolore
+            fuga facere expedita magni porro facilis repellat? Eveniet, debitis animi officia nobis quos quisquam
+            aspernatur. Inventore perspiciatis deserunt incidunt repudiandae quasi est quidem aliquam corporis
+            numquam asperiores nam nesciunt ducimus facere, fuga, nihil odio cupiditate vero! Labore dolores saepe
+            mollitia commodi molestiae ipsum iusto sunt assumenda! Vel aut, suscipit cum nihil tempore provident,
+            amet laborum ducimus repellat quia quae consectetur quaerat accusantium totam non praesentium. Aut
+            accusantium dolore, ad cumque est repellat iusto impedit, delectus voluptas mollitia repellendus nisi,
+            earum facere consequatur doloribus eveniet laudantium nemo facilis?
+        </p>
+    </div>
+    <!-- Buttons - Accordion menu -->
+    <button id="new-assignment" class="addNew"><strong>Add new</strong></button>
+    <button id="btn-assignment" class="accordion"><strong>Assignments</strong></button>
+
+    <!-- Table: assignments -->
+    <div id="pnl-assignment" class="pnl">
+        <table class="tables">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Submision date</th>
+                <th>Edit</th>
+            </tr>
+            <tr>
+                <td>First project</td>
+                <td>Individual Project</td>
+                <td>2021-03-31</td>
+                <td><input type="button" value="edit" title="Edit assignment's details" class="edit-assignment"></td>
+            </tr>
+            <tr>
+                <td>Second project</td>
+                <td>Make a web App</td>
+                <td>2021-04-23</td>
+                <td><input type="button" value="edit" title="Edit assignment's details" class="edit-assignment"></td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>Individual Project</td>
+                <td>2021-06-30</td>
+                <td><input type="button" value="edit" title="Edit assignment's details" class="edit-assignment"></td>
+            </tr>
+            <tr>
+                <td>Group project</td>
+                <td>Make a web App</td>
+                <td>2021-07-30</td>
+                <td><input type="button" value="edit" title="Edit assignment's details" class="edit-assignment"></td>
+            </tr>
+        </table>
+    </div>
     </div>
 
     <!-- scroll to top button -->
