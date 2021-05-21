@@ -83,9 +83,14 @@ $(document).ready(function () {
 
 
     // Save button: when clicked an alert pops up
-    // $('#submit-assignment').click(function(event){
-    //    alert("Your changes have been saved successfuly!"); 
-    // });
+    $('.save-btn').click(function(event){
+       alert("A new entry has been saved!"); 
+    });
+
+    // Edit button: when clicked an alert pops up
+    $('.edit-btn').click(function(event){
+        alert("Your changes have been saved successfuly!"); 
+     });
 
 
 });//end of Jquery
