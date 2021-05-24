@@ -20,6 +20,7 @@ $(document).ready(function () {
         $('#pnl-assignment').toggle();
     });
 
+
     // click the add new button to go to the form
     $("#new-student").click(function (event) {
         window.open('student.html', '_blank');
@@ -37,6 +38,7 @@ $(document).ready(function () {
         window.open('assignment.html', '_blank');
     });
 
+
     // Scroll to top button
     $("#top-button").click(function (event) {
         document.body.scrollTop = 0;
@@ -53,21 +55,27 @@ $(document).ready(function () {
         window.open('edit-course.html', '_blank');
     });
 
+
     // Assignments menu: open edit form when you click the edit button
     $('.edit-assignment').click(function (event) {
         window.open('edit-assignment.html', '_blank');
     });
 
+    
     // Students menu: open edit form when you click the edit button
     $('.edit-student').click(function (event) {
         window.open('edit-student.html', '_blank');
+    });
+
+    // Trainers menu: open edit form when you click the edit button
+    $('.edit-trainer').click(function (event) {
+        window.open('edit-trainer.html', '_blank');
     });
 
 
     // Modal windows
     for (let i = 1; i < 5; i++) {
         $('#modal-f' + i).click(function (event) {
-            // console.log("inner " + i);
             $('#myModal' + i).show();
         });
 
@@ -76,11 +84,23 @@ $(document).ready(function () {
         });
     };
 
+    for (let i = 1; i < 8; i++) {
+        $('#modal-st-' + i).click(function (event) {
+            $('#myModal-s' + i).show();
+        });
+    };
+
+    for(let i = 1; i < 6; i++){
+        $('#modal-tr-' + i).click(function(event){
+            $('#myModal-t' + i).show();
+        });
+    };
+
+
+    // closes the modal window when the (x) is clicked
     $('.close').click(function (event) {
         $('.modal').hide();
-
     });
-
 
     // Save button: when clicked an alert pops up
     $('.save-btn').click(function(event){
@@ -140,13 +160,3 @@ function openCourse(evt, courseType) {
 };
 
 
-// ------------------Modal window---------------------
-
-// let modal = document.getElementById("myModal");
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
