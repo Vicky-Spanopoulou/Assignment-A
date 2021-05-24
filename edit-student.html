@@ -25,16 +25,16 @@
                     <p>Please fill in this form to edit an existing student.</p>
                     <hr>
                     <p class="info"><b>First Name:</b></p>
-                    <p><input type="text" name="firstName" placeholder="Enter First Name" class="box" required></p>
+                    <p><input type="text" name="firstName" placeholder="Enter First Name" minlength="5" maxlength="30" class="box" required></p>
 
                     <p class="info"><b>Last Name:</b></p>
-                    <p><input type="text" name="lastName" placeholder="Enter Last Name" class="box" required></p>
+                    <p><input type="text" name="lastName" placeholder="Enter Last Name" minlength="5" maxlength="30" class="box" required></p>
 
                     <p class="info"><b>E-mail:</b></p>
                     <p><input type="email"name="email" placeholder="Enter Email" class="box" required></p>
 
                     <p class="info"><b>Phone number:</b></p>
-                    <p><input type="tel"name="tel" placeholder="Enter phone number" class="box" required></p>
+                    <p><input type="tel"name="tel" placeholder="Enter phone number" minlength="6" maxlength="10" class="box" required></p>
 
                     <p class="info"><b>Date of Birth:</b></p>
                     <p><input type="date" name="dob" min="1960-01-01" max="2003-12-31" class="box" placeholder="Enter Date of Birth"></p>
